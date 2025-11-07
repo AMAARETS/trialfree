@@ -87,7 +87,7 @@ jobs:
 
       - name: Clone Repository
         # שימוש ב-GITHUB_TOKEN לאימות ומניעת שגיאות גישה
-        run: git clone -b "${{ steps.vars.outputs.branch }}" https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/rzc0d3r/ESET-KeyGen.git
+        run: git clone -b "${{ steps.vars.outputs.branch }}" https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/kirner/MyESET-KeyGen.git
 
       - name: Setup & Run Script (Linux/macOS)
         if: runner.os != 'Windows'
